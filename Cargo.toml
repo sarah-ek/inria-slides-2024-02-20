@@ -1,0 +1,9 @@
+[package]
+name = "faer-slides"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+faer = { git = "https://github.com/sarah-ek/faer-rs/", version = "0.16.0", rev = "fa5e48667d079ef49600f41ccb0f1a420a666ab2" }
