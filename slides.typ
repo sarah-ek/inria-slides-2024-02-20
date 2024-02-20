@@ -32,14 +32,14 @@
 ]
 
 #polylux-slide[
-  == Features
+  == faer's top features currently
   - Vectorized and optimized for x86 (AVX2/AVX512) and ARM64
   - Fine control over multithreading
   - Matrix arithmetic
   - Matrix decompositions (Cholesky, QR, LU), with optional pivoting
   - Simplicial and supernodal sparse decompositions
   - Solving linear systems
-  - Computing the SVD/EVD (currently dense only)
+  - Computing the SVD/EVD (dense implemented, sparse solver is on the way)
 ]
 
 #polylux-slide[
@@ -225,7 +225,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ]
 
 #polylux-slide[
-  == Benchmarks (dense)
+  == Benchmarks (dense QR)
 
   #align(horizon + center)[
   #image("qr.svg", height: 80%)
@@ -233,7 +233,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ]
 
 #polylux-slide[
-  == Benchmarks (sparse)
+  == Benchmarks (sparse Cholesky)
 
 #set text(size: 15pt)
 #box(height: 250pt,
@@ -277,7 +277,15 @@ SUITESPARSE MATRIX COLLECTION / ND3K:
 
 #polylux-slide[
   #align(horizon + center)[
-  = Thank you!
+    = Thank you!
+
+    #align(horizon + left)[
+      \
+      \
+      #box(height: 20pt, image("github.svg"))\
+      github.com/sarah-ek/faer-rs\
+      github.com/sarah-ek/inria-slides-2024-02-20
+    ]
   ]
 
 ]
